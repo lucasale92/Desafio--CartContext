@@ -16,7 +16,7 @@ function CartWidget() {
 
           <div className="text-end">
             <button type="button" className="btn-cart">
-              Carrito{getItemQty() > 0 ? getItemQty() : 0}
+              Carrito = {getItemQty() > 0 ? getItemQty() : 0}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"

@@ -7,34 +7,9 @@
   color: black;
   background-color: #fff;
 }
-.App-nav ul li {
-  list-style: none;
-  display: inline-block;
-  margin: 0 20px;
-  position: relative;
-}
-.App-nav ul li a {
-  text-decoration: none;
-  color: #6e00653d;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 1.3rem;
-}
-.App-nav ul li::before {
-  content: "";
-  height: 4px;
-  width: 0%;
-  background: rgb(248, 244, 244);
-  position: absolute;
-  left: 0;
-  bottom: -12px;
-  transition: 0.4s ease-out;
-}
-.App-nav ul li:hover::before {
-  width: 100%;
-}
 .App-logo {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
 }
 .App-cart {
   width: 30px;
@@ -42,11 +17,11 @@
   cursor: pointer;
 }
 .App-cart:hover {
-  background-color: #fff;
-  color: black;
+  background-color: #015a08;
+  color: #fff;
 }
 .btn-cart {
-  color: #fff;
+  color: black;
   background-color: #015a08;
 }
 .bi facebook:hover {
@@ -115,4 +90,64 @@ h2 {
 }
 .shop-img:focus {
   outline: none;
+}
+.footer {
+  background: #015a08;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 100%;
+  margin-top: auto;
+  padding: 1rem;
+}
+
+.linea {
+  font-weight: 400;
+  font-size: 1rem;
+  border-bottom: 1px solid #df0f0fa4;
+  padding-bottom: .8rem;
+}
+
+.footer-ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+}
+.footer a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: 350;
+  font-size: 100;
+  transition: all .2s ease-in-out;  
+}
+
+.footer  a:hover {
+  color: rgba(255, 255, 255, 0.581);
+}
+
+.footer p {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+}
+
+.text-footer {
+  color: rgba(255, 255, 255, .5);
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.column {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 576px) {
+  .text-footer {
+      font-size: 12.6px !important;
+  }
 }
