@@ -7,29 +7,21 @@ const ItemCount = ({ stock, inicial, onAdd }) => {
     qty < stock && setQty(qty + 1) 
   };
   const restar = () => {
-    qty > inicial
-      ? setQty(qty - 1)
-      : alert("No se pueden quitar más productos");
+    qty > 1 && setQty(qty - 1)
   };
-  const reset = () => {
-    setQty(inicial);
-  };
+
   return (
     <div>
-      <h3>{qty}</h3>
+      <h2>{qty}</h2>
       <button onClick={sumar} className="botonUno">
         +
       </button>
       <button onClick={restar} className="botonDos">
         -
       </button>
-      <button onClick={reset} className="botonTres">
-        Reset
-      </button>
       <button
         onClick={() => {
           onAdd(qty);
-          reset();
         }}
         className="botonCuatro"
       >

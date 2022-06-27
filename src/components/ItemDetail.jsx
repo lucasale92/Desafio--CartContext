@@ -29,7 +29,7 @@ const ItemDetail = ({ detail }) => {
               <p className="detail-precio">Precio: $ {detail.price}</p>
               <p className="detail-detalle">Descripcion: {detail.details}</p>
               <p className="detail-details">Stock disponible: {detail.stock}</p>
-              {counter? <ItemCount qty={1} setQty={5} stock={detail.stock}   onAdd={onAdd} /> 
+              {counter? <ItemCount qty={1} setQty={5}  onAdd={onAdd} producto={detail.name}/> 
               :
               <>
                 <Link to ={"/cart"}><Button variant="success" size="lg">Ir al Carrito</Button>{' '}</Link>
